@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice's Carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/rb5tjc0/carousel.png">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<style>
+
+.contain-all {
+    max-width: 1280px !important;
+    margin: auto !important;
+}
+
+.splide__pagination li {
+    display: inline-block;
+    line-height: 1;
+    list-style-type: none;
+    margin: 0;
+    pointer-events: auto;
+    visibility: hidden;
+}
+
+.vp-caro-flex {
+            display:flex;
+            gap: 60px;
+            width: 100%;
+            justify-content: center;
+            @media screen and (max-width: 800px) {
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+  }
+        }
+
+.vp-flex-col-1 {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: 800px) {
+  
+  }
+}
+
+.vp-flex-col-2 {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: 800px) {
+  }
+}
+
+.splide__arrow {
+    -ms-flex-align: center;
+    align-items: center;
+    background: #ccc;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2em;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: .7;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 2em;
+    z-index: 1;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+.vp-flex-col-1, .vp-flex-col-2 {
+width: 80%;
+text-align: center;
+}
+}
+
+.button-vp-center {
+    text-align: center;
+}
+
+.button-vp-black {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+    padding: 12px 28px;
+    display: inline-block;
+}
+
+</style>
+
+</head>
+<body>
+
+    <section class="splide" aria-labelledby="carousel-heading">
+      
+      
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+
+                    
+
+                    <div class="vp-caro-flex ">
+                        <div class="vp-flex-col-1">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5d0a4fc001091b0001aa8e37/77d37153-23df-41c8-9634-e28a2cb1901d/SiliconCore_-_1.9mm_LED_Volume_114.jpg?format=1500w" alt="" >
+                         </div>
+                         <div class="vp-flex-col-2">
+                            <h3> 1.9mm XR LED Display</h3>
+                            <p>The high performance 1.9mm XR LED Display is a scalable and modular solution for creating LED volumes for broadcast and virtual production environments.
+                                <br>
+                                This fine pixel pitch display features proprietary technologies from SiliconCore that ensures superior performance, including frame rates of 240Hz and increased durability. The display can also be used as a studio floor to create the highest-resolution immersive production spaces possible, requiring no separate overlay.</p>
+                            <div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="button-vp-center"> <a href="https://www.silicon-core.com/products/xr" ><p class="button-vp-black">READ MORE</p></a>
+                </div>
+                </li>
+                  
+                  <li class="splide__slide">
+                      <div class="vp-caro-flex">
+                        <div class="vp-flex-col-1">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5d0a4fc001091b0001aa8e37/5d8ddfa7-3123-4492-9448-feb0c1394a25/new_product_header.png?format=1500w" alt="" >
+                        </div>
+
+                        <div class="vp-flex-col-2">
+                            <h3>High Resolution 1.2MM LED Modular Floor Display</h3>
+                            <p>The SiliconCore High Resolution 1.2mm Modular Floor LED display with LISA 2.0 technology, is a breakthrough for the dvLED display industry and the only durable 1.2mm floor available for fixed installation, requiring no separate overlay.</p>
+
+                        </div>
+                     </div>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <div class="button-vp-center"><a href="https://www.silicon-core.com/products/silicon-floor" ><p class="button-vp-black">Read more</p></a></div>
+                </li>
+                  
+              </ul>
+        </div>
+        
+      </section>
+
+</body>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide' );
+      splide.mount();
+    } );
+
+    var elms = document.getElementsByClassName( 'splide' );
+
+for ( var i = 0; i < elms.length; i++ ) {
+  new Splide( elms[ i ] ).mount();
+}
+  </script>
+
+</html>

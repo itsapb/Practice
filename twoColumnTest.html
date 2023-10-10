@@ -1,0 +1,118 @@
+<DOCTYPE html>
+    <html>
+        <head> 
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <title>C o l u m n s</title>
+    <style>
+
+        .content {
+            max-width: 1280px !important;
+            margin: auto !important;
+        } 
+
+        .section-container  {
+            padding: 40px !important;
+            text-align: center;
+        }
+        body {
+background-color: lightblue;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+float: left;
+width: 50%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+.column {
+width: 50%;
+padding: 40px;
+}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.column {
+width: 100%;
+padding: 40px;
+}
+}
+
+
+
+
+/* font styling */
+
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+        .nuc-p {
+            color: black;
+            font-size: large;
+          line-height: 1.6;
+          
+        }
+
+
+
+    /* image & text styling */
+
+    
+    .width-100 {
+        width: 85%;
+    } 
+
+ 
+    .pad-right {
+        padding-right: 30px;
+    }
+
+       .background-whte {
+         background-color: white;
+       }
+
+      .pad-top {
+        padding-top: 30px;
+    }
+    </style>
+
+</head> 
+
+<body>
+    
+
+<div class="row pad-right ">
+<div class="column">
+    <img class="width-100" src="https://images.squarespace-cdn.com/content/5d0a4fc001091b0001aa8e37/c0a3dcd7-5da8-43be-9c5d-b4306cee7ac9/SiliconCore.png?content-type=image%2Fpng" alt="">
+
+</div>
+<div class="column pad-top">
+    <p class="nuc-p">Create fully immersive, scalable LED volumes that are always pixel perfect thanks to proprietary technologies from SiliconCore. Common Cathode, LISA and ZACH ensure superior performance for virtual production, broadcast and XR environments for film, TV, drama and commercial ventures.
+        <br>
+        <br>
+        Fine pixel pitch displays from 1.2mm and fast clock speed enable frame rates of 240Hz and refresh rate of 7680Hz, to deliver defined images with less motion blur, for excellent camera viewing, slow-motion cinematography and building active 3D environments. 
+        SiliconCore’s LISA encapsulation progress enhances durability, displays can be used as a studio floor to create the highest-resolution immersive production spaces possible, requiring no additional overlay.</p>
+
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

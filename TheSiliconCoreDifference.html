@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>R e s p o n s i v e n e s s</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/3ptzR9f/Untitled-1.png">
+  <style>
+    .content {
+      max-width: 1280px !important;
+      margin: auto !important;
+    } 
+    
+    .section-container  {         
+      text-align: center;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      width: 100%;
+      @media screen and (max-width: 900px) {
+      flex-direction: column;
+      }
+    }
+    
+    .flex-content-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      @media screen and (max-width: 1100px) {
+      flex-direction: column-reverse;
+      }
+    }
+    
+    .flex-wrap-col {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      @media screen and (max-width: 900px) {
+      }
+    }
+    
+         
+     .vp-flex-col {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+         @media screen and (max-width: 900px) {
+         flex-direction: column;
+         }
+    }
+    
+    .content-wrap {
+      width: 100%;
+    }
+    
+    .vp-icon-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      @media screen and (max-width: 900px) {
+      justify-content: start;  
+      align-items: start;
+        
+         }
+    }
+    
+    
+    .nuc-p {
+      color: black;
+      font-size: large;  
+    }
+    
+    /* image & text styling */
+    
+    .vp-grey-font {
+      color: grey;
+    }
+    
+      .vp-grey-font-p {
+      color: grey;
+        line-height: 24px;
+    }
+      
+    .width-85 {
+      width: 85%;
+      @media screen and (max-width: 900px) {
+        width: 150px;
+      }
+    } 
+      
+    </style>
+
+    </head>
+    <body>
+      <h1>Testing Responsiveness</h1>
+    <div class="flex-container">
+              
+      
+              <div class="vp-flex-col">
+                <h3 class="vp-grey-font ">Higher Performance – Differentiate yourself </h3>
+                 <div class="flex-content-wrap">
+                    <div class="content-wrap">
+                        <h3>COMMON CATHODE</h3>
+                        <p class="vp-grey-font-p">This patented technology enables the sustained brightness of up to 2000 nits along with a low operating temperature that only SiliconCore’s driver technology can achieve.</p>
+                     </div>
+                     <div class="vp-icon-wrap">
+                        <img class="width-85" src="https://images.squarespace-cdn.com/content/v1/5d0a4fc001091b0001aa8e37/1575635177273-F5YSK8FNRNZ3EDC5YOIQ/tech_cc.png?format=300w" alt="">
+                     </div>
+                  </div>
+               </div>   
+    
+      
+     
+    
+           <div class="vp-flex-col">
+               <h3 class="vp-grey-font ">Low power – <br> Lower your operating costs</h3>
+                  <div class="flex-content-wrap">
+                 <div class="content-wrap">
+                 <h3>ZACH</h3>
+                  <p class="vp-grey-font-p">
+          Image Enhancing Technology that improves the contrast and provides better detail in low brightness areas of the image. The High Dynamic Range goes from 2000 nits down to 0.08 nits, representing a 25,000:1 dynamic contrast ratio.</p>
+                 </div>
+                <div class="vp-icon-wrap">
+                  <img class="width-85" src="https://images.squarespace-cdn.com/content/v1/5d0a4fc001091b0001aa8e37/e1f0eb2f-71f8-4d2b-b669-0f1cc6c95170/Rectangle+54.png?format=750w" alt="">
+               </div>
+             </div>
+           </div>   
+       
+      
+    
+          <div class="vp-flex-col">
+            <h3 class="vp-grey-font ">Protect your investment </h3>
+          <br>
+                <div class="flex-content-wrap">
+              <div class="content-wrap">
+                <h3>LISA</h3>
+                <p class="vp-grey-font-p ">SiliconCore’s durable encapsulation technology,  LISA, protects the individual LEDs from damage. This extends the product lifetime, especially in rugged environments. This is achieved with no compromise to brightness or color reproduction.</p>
+               </div>
+             <div class="vp-icon-wrap">
+                <img class="width-85" src="https://images.squarespace-cdn.com/content/v1/5d0a4fc001091b0001aa8e37/1560963709972-YUC0QL6NPX02S3RN4O2H/tech_lisa.png?format=300w" alt="">
+             </div>
+           </div>
+         </div>
+      
+    </div>
+    
+      
+    </body>
+</html>

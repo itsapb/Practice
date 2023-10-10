@@ -1,0 +1,83 @@
+<style>    
+
+    /* Create four equal columns that floats next to each other */
+    .flex-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      @media screen and (max-width: 800px) {
+      flex-direction: column;
+      }
+      
+    }
+    
+      .vp-column-left {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+       @media screen and (max-width: 800px) {
+      text-align: center;
+       }
+    }
+    
+    .vp-column-right {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (max-width: 800px) {
+        text-align: center;
+        }
+    }
+        
+    
+        /* font styling */
+    
+     .nuc-p {
+        color: black; 
+        font-size: large;
+    }
+    
+            /* image & text styling */
+    
+            
+            .width-85 {
+                width: 85%;
+            } 
+
+        .ramz-vid {
+            width: 100%;
+           
+        }
+    
+            </style>
+        
+    
+    
+    <div class="flex-wrap">
+
+        <div class="vp-column-left">
+            <h3>The Benefits of 240hz for Virtual Production</h3>  
+            <p class="nuc-p">Ramaz Studios, a virtual production studio in London, is utilizing a SiliconCore Magnolia 1.5mm LED wall in 4K resolution to create a virtual backdrop for interviews, product photography, videography, music videos, corporate commercials, feature films, driving scenes, live broadcasts and much more.</p> 
+            <a href="https://www.silicon-core.com/products/xr" ><p class="button-red">Read more</p></a>
+  
+        </div>
+
+
+        <div class="vp-column-right">
+            <div class="ramz-vid"><iframe src="https://player.vimeo.com/video/863156438?h=0fce0fc9a5&badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"  title="Copy of Main-Film _V2-16x9_V2 (1)"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js">
+
+            </script>
+    
+        </div>
+
+
+
+    </div>
